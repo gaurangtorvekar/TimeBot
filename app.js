@@ -64,7 +64,7 @@ app.post('/time', function(req, res) {
 	singaporeTime = new Date(singaporeTime);
     
     console.log(indiaTime, londonTime, singaporeTime);
-    res.send("India = " + indiaTime.toLocaleString() + "\nLondon = " + londonTime.toLocaleString() + "\nSingapore = " + singaporeTime.toLocaleString());
+    res.send("Current times in these countries are -\n" + "India = " + indiaTime.toLocaleString() + "\nLondon = " + londonTime.toLocaleString() + "\nSingapore = " + singaporeTime.toLocaleString());
 });
 
 // catch 404 and forward to error handler
